@@ -17,7 +17,7 @@ const CardItem = ({ image, title, description }) => {
       <Box
         sx={{
           width: "100%",
-          height: "450px",
+          height: "380px",
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",

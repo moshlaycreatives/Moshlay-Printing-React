@@ -7,7 +7,7 @@ const WholeSaleSectionMain = () => {
     <>
 
 
-<Box sx={{padding:'2rem 10%', mt:10}}>
+<Box sx={{padding:'2rem 15%', mt:10}}>
 
   <WholeSaleCard/>
 
