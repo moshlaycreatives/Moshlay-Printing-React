@@ -17,6 +17,8 @@ import HeroSectionMain from "./HeroSection/HeroSectionMain";
 import CustomPackagingMain from "./Custompackaging/CustomPackagingmain";
 import CustomInspireMain from "./CustomInspire/CustomInspireMain";
 import PremiumFinishMain from "./PremiumFinish/PremiumFinishMain";
+import RequestInstant from "./RequestInstant/RequestInstant";
+import HomePageSlider from "./HomePageSlider/HomePageSlider";
 
 
 const Landing = () => {
@@ -36,6 +38,9 @@ const Landing = () => {
 <CustomPackagingMain/>
 <CustomInspireMain/>
 <PremiumFinishMain/>
+
+<RequestInstant/>
+<HomePageSlider/>
 
 </Page>
     </>

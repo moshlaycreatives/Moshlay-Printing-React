@@ -45,7 +45,7 @@ const Footer = () => {
                         marginRight: "0.6rem",
                       }}
                     >
-                      Moshalay{" "}
+                      Moshlay{" "}
                     </Typography>
                     <Typography
                       sx={{
