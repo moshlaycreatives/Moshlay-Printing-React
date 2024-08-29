@@ -19,6 +19,8 @@ import CustomInspireMain from "./CustomInspire/CustomInspireMain";
 import PremiumFinishMain from "./PremiumFinish/PremiumFinishMain";
 import Header from "../Components/Header/Header";
 import Header2 from "../Components/Header/Header2";
+import RequestInstant from "./RequestInstant/RequestInstant";
+import HomePageSlider from "./HomePageSlider/HomePageSlider";
 
 
 const Landing = () => {
@@ -26,7 +28,7 @@ const Landing = () => {
   const theme = useTheme()
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
-  const is1200   = useMediaQuery('(max-width:1200px)'); 
+  const is1200   = useMediaQuery('(max-width:1200px)');
   const isSeven70 = useMediaQuery ('(max-width:770px)')
 
   useEffect(()=>{
@@ -42,7 +44,7 @@ const Landing = () => {
     return ()=>{
       window.removeEventListener('scroll' , handleScroll);
     }
-  
+
   },[])
 
 
@@ -73,6 +75,9 @@ const Landing = () => {
 <CustomPackagingMain/>
 <CustomInspireMain/>
 <PremiumFinishMain/>
+
+<RequestInstant/>
+<HomePageSlider/>
 
 </Page>
     </>
