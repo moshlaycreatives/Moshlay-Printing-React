@@ -21,6 +21,8 @@ import Header from "../Components/Header/Header";
 import Header2 from "../Components/Header/Header2";
 import RequestInstant from "./RequestInstant/RequestInstant";
 import HomePageSlider from "./HomePageSlider/HomePageSlider";
+import HomePageBrands from "./HomePageBrands/HomePageBrands";
+import WhyChooseMain from "./WhyChooseUs/WhyChooseMain";
 
 
 const Landing = () => {
@@ -75,8 +77,10 @@ const Landing = () => {
 <CustomPackagingMain/>
 <CustomInspireMain/>
 <PremiumFinishMain/>
-
+<WhyChooseMain/>
 <RequestInstant/>
+<HomePageBrands/>
+
 <HomePageSlider/>
 
 </Page>

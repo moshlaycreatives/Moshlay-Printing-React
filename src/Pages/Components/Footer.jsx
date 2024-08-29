@@ -7,17 +7,18 @@ import {
   Typography,
   useTheme,
   Link as MuiLink,
+  Button,
 } from "@mui/material";
 import React from "react";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
+
 import { Link } from "react-router-dom";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import PinterestIcon from "@mui/icons-material/Pinterest";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import { useLocation } from "react-router-dom";
+
+import { RiVisaLine } from "react-icons/ri";
+import { RiMastercardLine } from "react-icons/ri";
+import { GrAmex } from "react-icons/gr";
+import { SiDiscover } from "react-icons/si";
+import { FaCcPaypal } from "react-icons/fa6";
+import { BsBank } from "react-icons/bs";
 
 import { MdOutlineMail } from "react-icons/md";
 import { MdLocalPhone } from "react-icons/md";
@@ -34,7 +35,6 @@ const Footer = () => {
             <Grid item lg={4} md={4} sm={12} xs={12}>
               <Box>
                 <Link to="/" style={{ textDecoration: "none" }}>
-
                   <Box sx={{ display: "flex" }}>
                     <Typography
                       sx={{
@@ -62,16 +62,16 @@ const Footer = () => {
                 </Link>
               </Box>
               <Typography
-                sx={{ fontSize: "1.2rem", marginTop: "1rem", color: "white" }}
+                sx={{ fontSize: "1.1rem", marginTop: "1rem", color: "white" }}
               >
-                We collaborate with people and brands.
+                We collaborate with people <br/> and brands.
                 <br />
-                Lets build something great together.
+                Lets build something great <br/> together.
                 <br />
-                Signup for exclusive offers and updates!
+                Signup for exclusive offers <br/>and updates!
               </Typography>
             </Grid>
-            <Grid item lg={3} md={3} sm={12} xs={12}>
+            <Grid item lg={2.5} md={2.5} sm={12} xs={12}>
               <Typography
                 sx={{
                   fontSize: "1.2rem",
@@ -87,6 +87,7 @@ const Footer = () => {
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
+                  marginTop: "0.5rem",
 
                   textTransform: "none",
                 }}
@@ -108,6 +109,7 @@ const Footer = () => {
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
+                  marginTop: "0.5rem",
 
                   textTransform: "none",
                 }}
@@ -129,6 +131,7 @@ const Footer = () => {
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
+                  marginTop: "0.5rem",
 
                   textTransform: "none",
                 }}
@@ -149,6 +152,7 @@ const Footer = () => {
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
+                  marginTop: "0.5rem",
 
                   textTransform: "none",
                 }}
@@ -170,6 +174,7 @@ const Footer = () => {
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
+                  marginTop: "0.5rem",
 
                   textTransform: "none",
                 }}
@@ -190,6 +195,7 @@ const Footer = () => {
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
+                  marginTop: "0.5rem",
 
                   textTransform: "none",
                 }}
@@ -208,7 +214,7 @@ const Footer = () => {
               </Typography>
             </Grid>
 
-            <Grid item lg={3} md={3} sm={12} xs={12}>
+            <Grid item lg={2.5} md={2.5} sm={12} xs={12}>
               <Typography
                 sx={{
                   fontSize: "1.2rem",
@@ -242,6 +248,8 @@ const Footer = () => {
 
               <Typography
                 sx={{
+                  marginTop: "0.5rem",
+
                   color: "grey",
                   fontSize: "1rem",
 
@@ -265,6 +273,7 @@ const Footer = () => {
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
+                  marginTop: "0.5rem",
 
                   textTransform: "none",
                 }}
@@ -285,6 +294,7 @@ const Footer = () => {
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
+                  marginTop: "0.5rem",
 
                   textTransform: "none",
                 }}
@@ -304,6 +314,8 @@ const Footer = () => {
 
               <Typography
                 sx={{
+                  marginTop: "0.5rem",
+
                   color: "grey",
                   fontSize: "1rem",
 
@@ -316,6 +328,8 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: "white",
+                    marginTop: "0.5rem",
+
                     "&:hover": { textDecoration: "none" },
                   }}
                 >
@@ -326,6 +340,7 @@ const Footer = () => {
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
+                  marginTop: "0.5rem",
 
                   textTransform: "none",
                 }}
@@ -336,6 +351,7 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: "white",
+
                     "&:hover": { textDecoration: "none" },
                   }}
                 >
@@ -344,7 +360,7 @@ const Footer = () => {
               </Typography>
             </Grid>
 
-            <Grid item lg={2} md={2} sm={12} xs={12}>
+            <Grid item lg={3} md={3} sm={12} xs={12}>
               <Typography
                 sx={{
                   fontSize: "1.2rem",
@@ -369,16 +385,20 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: "white",
+                    alignItems: "start",
+                    display: "flex",
+
                     "&:hover": { textDecoration: "none" },
                   }}
                 >
-                  <IoLocationSharp />
-                  87 Rutter St, Walsall United Kingdom
+                  <IoLocationSharp style={{ fontSize: "1.5rem" }} />
+                  1601 Ware Bottom Spring Rd, Suite 210, Chester - VA 23836
                 </MuiLink>
               </Typography>
 
               <Typography
                 sx={{
+                  marginTop: "0.5rem",
                   color: "grey",
                   fontSize: "1rem",
 
@@ -391,18 +411,21 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: "white",
+                    display: "flex",
+                    alignItems: "center",
                     "&:hover": { textDecoration: "none" },
                   }}
                 >
-                  <MdLocalPhone /> 0800-208-8043
+                  <MdLocalPhone style={{ fontSize: "1.2rem" }} /> 0800-208-8043
                 </MuiLink>
               </Typography>
 
               <Typography
                 sx={{
+                  marginTop: "0.5rem",
+
                   color: "grey",
                   fontSize: "1rem",
-
                   textTransform: "none",
                 }}
               >
@@ -412,10 +435,13 @@ const Footer = () => {
                   sx={{
                     textDecoration: "none",
                     color: "white",
+                    display: "flex",
+                    alignItems: "center",
                     "&:hover": { textDecoration: "none" },
                   }}
                 >
-                  <MdOutlineMail /> sales@poppackaging.co.uk
+                  <MdOutlineMail style={{ fontSize: "1.2rem" }} />{" "}
+                  sales@poppackaging.co.uk
                 </MuiLink>
               </Typography>
             </Grid>
@@ -463,45 +489,57 @@ const Footer = () => {
                           color: "white",
                         }}
                       >
-                        <Typography>Submit</Typography>
+                        <Button
+                          sx={{
+                            color: "white",
+                            textTransform: "none",
+                            fontSize: "1rem",
+                            fontWeight: 400,
+                          }}
+                        >
+                          Submit
+                        </Button>
                       </InputAdornment>
                     ),
                     sx: {
                       "& input::placeholder": {
                         color: "grey",
                       },
-                      padding: 0, // Ensure no padding for the input
+                      padding: 0,
                     },
                   }}
                 />
               </Box>
             </Grid>
-            <Grid lg={4} md={4} sm={12} xs={12}></Grid>
-            <Grid lg={5} md={5} sm={12} xs={12}>
-              <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Grid lg={4.5} md={4.5} sm={12} xs={12}></Grid>
+            <Grid lg={4.5} md={4.5} sm={12} xs={12}>
+              <Box sx={{ display: "flex", alignItems: "center" }} gap={1}>
                 <Typography sx={{ color: "white" }}>
-                  SSL 100% Secure Transactions:
+                  SSL 100% Secure Transactions :
                 </Typography>
                 <Box
                   sx={{
                     display: "flex",
                     justifyContent: "start",
                     alignItems: "center",
-                    marginTop: "1rem",
                   }}
                   gap={1}
                 >
-                  <img src="/visaimage.png" alt="" />
-                  <img src="/american.png" alt="" />
-                  <img src="/mastercard.png" alt=" " />
-                  <img src="/stripe.png" alt="" />
+                  <RiVisaLine style={{ fontSize: "2rem", color: "white" }} />
+                  <RiMastercardLine
+                    style={{ fontSize: "1.5rem", color: "white" }}
+                  />
+                  <GrAmex style={{ fontSize: "3rem", color: "white" }} />
+                  <SiDiscover style={{ fontSize: "3rem", color: "white" }} />
+                  <FaCcPaypal style={{ fontSize: "2rem", color: "white" }} />
+                  <BsBank style={{ fontSize: "1.5rem", color: "white" }} />
                 </Box>
               </Box>
             </Grid>
           </Grid>
           <br />
 
-          <Divider />
+          <Divider sx={{ borderColor: "white" }} />
           <Box
             sx={{
               display: "flex",
