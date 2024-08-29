@@ -6,15 +6,20 @@ const HeroSectionMain = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const is1500   = useMediaQuery('(max-width:1500px)');
+  const is1200   = useMediaQuery('(max-width:1200px)');
 
   return (
     <>
-      <Box>
+      <Box>              
         <Grid container>
-          <Grid item lg={4} md={4} sm={4} xs={4}>
+          <Grid item lg={3.5} md={2.5} sm={4} xs={4} sx={{
+            display: isMedium ? 'none' : 'block',
+          }}>
             <Box
               sx={{
                 backgroundColor: "white",
+                paddingLeft:'15%', paddingTop:'5%'
               }}
             >
               <Box
@@ -24,7 +29,9 @@ const HeroSectionMain = () => {
                   justifyContent: "center",
                 }}
               >
-                <img src="/logo.png" alt="" />
+                <img src="/logo.png" alt="" style={{
+                  width:is1200 ? '60%': '45%'
+                }} />
               </Box>
               <Box
                 sx={{
@@ -33,34 +40,40 @@ const HeroSectionMain = () => {
                   display: "flex",
                   justifyContent: "end",
                   marginRight: "-5rem",
+                  marginTop:is1200 ? '5rem ' : '0rem',
                 }}
               >
-                <img src="/heroimage.png" alt="" style={{ zIndex: 2 }} />
+                <img src="/heroimage.png" alt=""
+                style={{
+                  width: is1200 ?  "70%": is1500 ? '60%' : '60%',
+                  zIndex: 2
+                }}
+                />
               </Box>
             </Box>
           </Grid>
-          <Grid item lg={8} md={8} sm={8} xs={8}>
+          <Grid item lg={8.5} md={9.5} sm={12} xs={12}>
             <Box
               sx={{
                 backgroundImage: "url(/herobg.png)",
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 objectFit: "cover",
-                height: "90vh",
+                height:is1200 ? "auto" : "80vh",
               }}
             >
               <Box
                 sx={{
-                  padding: "8% 5% 5% 10%",
+                  padding:isMedium ?  "20% 10% 5% 10%" : is1200 ?  "15% 5% 15% 15% ": "10% 5% 5% 15%",
                 }}
               >
                 <Typography
                   sx={{
                     fontSize: {
-                      xs: "2rem",
+                      xs: "1.5rem",
                       sm: "2.5rem",
-                      md: "3.2rem",
-                      lg: "3.8rem",
+                      md: "3rem",
+                      lg: "3.5rem",
                     },
                     fontWeight: "600",
                     color: "white",
@@ -73,9 +86,9 @@ const HeroSectionMain = () => {
                 <Typography
                   sx={{
                     fontSize: {
-                      xs: "1.5rem",
+                      xs: "1.3rem",
                       sm: "1.8rem",
-                      md: "2.2rem",
+                      md: "2rem",
                       lg: "2.5rem",
                     },
                     fontWeight: "400",
@@ -91,13 +104,13 @@ const HeroSectionMain = () => {
                 <Button
                   sx={{
                     backgroundColor: "#57adec",
-                    padding: "0.5rem 2rem",
+                    padding: isSmall ? '0.2rem 1rem' : "0.5rem 2rem",
                     color: "white",
                     textTransform: "none",
                     fontWeight: "400",
-                    fontSize: "1.2rem",
+                    fontSize: isSmall ? '1rem' : "1.2rem",
                     borderRadius: "10px",
-                    marginRight: { xs: "0rem", sm: "2rem", md: "2rem" },
+                  marginRight:'1rem',
 
                     "&:hover": {
                       color: "black",
@@ -110,13 +123,13 @@ const HeroSectionMain = () => {
                 <Button
                   sx={{
                     backgroundColor: "white",
-                    padding: "0.5rem 2rem",
+                    padding: isSmall ? '0.2rem 1rem' : "0.5rem 2rem",
                     color: "black",
                     textTransform: "none",
                     fontWeight: "400",
-                    fontSize: "1.2rem",
+                    fontSize: isSmall ? '1rem' : "1.2rem",
                     borderRadius: "10px",
-                    marginTop: { xs: "2rem", sm: "0rem" },
+                    // marginTop: isSmall ? '.5rem' : '',
                     "&:hover": {
                       color: "white",
                       backgroundColor: "#57adec",
@@ -132,20 +145,22 @@ const HeroSectionMain = () => {
                     marginBottom: "2rem",
                   }}
                 >
-                  <Box
+                  {/* ===============================================================REVIEW SECTION=================================== */}
+                  {/* <Box
                     sx={{
                       display: "flex",
                       flexWrap: "wrap",
-                      // flexDirection:{xs:'column', md:'column', lg:'row'},
+                      // flexDirection:{ sm:'column', md:'column', lg:'row'},
                       //  justifyContent:'center',
+                      // justifyContent:'center',
                       alignItems: "center",
-                      gap: 3,
+                      gap: isSmall ? 1 :3,
                     }}
                   >
-                    <img src="/herostar.png" alt="" width={"45rem"} />
+                    <img src="/herostar.png" alt="" width={isSmall ?  '25rem': isMedium ? '38rem':  "45rem"} />
                     <Typography
                       sx={{
-                        fontSize: "2.5rem",
+                        fontSize:isSmall ? '1.3rem' : isMedium ? "2rem"  : "2.5rem",
                         fontWeight: "600",
                         color: "white",
                         // fontStyle:'italic'
@@ -156,7 +171,7 @@ const HeroSectionMain = () => {
                     </Typography>
                     <Typography
                       sx={{
-                        fontSize: "1.2rem",
+                        fontSize:isSmall ? "1rem"  : "1.2rem",
                         fontWeight: "400",
                         color: "white",
                         // fontStyle:'italic'
@@ -166,7 +181,8 @@ const HeroSectionMain = () => {
                       336 Reviews
                     </Typography>
                     <Rating value={5} readOnly sx={{ color: "#57adec" }} />
-                  </Box>
+                  </Box> */}
+
                   <Typography
                     sx={{
                       fontSize: "1.1rem",
@@ -184,10 +200,10 @@ const HeroSectionMain = () => {
                   <Typography
                     sx={{
                       fontSize: {
-                        xs: "2rem",
-                        sm: "3rem",
-                        md: "4rem",
-                        lg: "5rem",
+                        xs: "1.5rem",
+                        sm: "2.5rem",
+                        md: "3.1rem",
+                        lg: "4rem",
                       },
                       fontWeight: "700",
                       color: "transparent",
@@ -208,12 +224,12 @@ const HeroSectionMain = () => {
         {/* =======================================BOTTOM BAR============================================ */}
         <Box 
         sx={{
-          marginTop:'-3rem', 
+          marginTop: isMedium ?' 0rem' :  '-3rem', 
           // padding:'0% 10%',
           // backgroundImage:'linear-Gradient(to right, #57adec 0% 40%, white 40% 100%)',
         }}>
           <Grid container>
-            <Grid item lg={6} md={6} sm={12} xs={12}>
+            <Grid item lg={7} md={7} sm={12} xs={12}>
               <Box
                 sx={{
                   display:'flex', 
@@ -232,11 +248,11 @@ const HeroSectionMain = () => {
             <Box
   sx={{
     position: 'relative', // Relative positioning for the inner content
-    width: '7rem',
-    height: '7rem',
+    width:isSmall ? '4.5rem' : is1200 ? '6rem' : '7rem',
+    height:isSmall ? '4.5rem' : is1200 ? '6rem' : '7rem',
     borderRadius: '50%', // Make the shape circular
     background: 'conic-gradient(white 0% 33%, #ffffff 33% 66%, #ffffff 66% 90%, #61c2f1 90% 100%)', // Apply the gradient to the background
-    padding: '12px', // Space around the inner content to mimic border
+    padding: '10px', // Space around the inner content to mimic border
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -257,7 +273,7 @@ const HeroSectionMain = () => {
       sx={{
         color: 'white',
         fontWeight: '700',
-        fontSize: '1.8rem'
+        fontSize: isSmall ? '1.3rem' : isMedium ? '1.6rem' : '1.8rem'
       }}
     >
       95%
@@ -266,8 +282,9 @@ const HeroSectionMain = () => {
         </Box>
         <Typography  sx={{
         color: 'white',
-        fontWeight: '600',
-        fontSize: '1.4rem', marginTop:'.5rem'
+        fontWeight: '500',
+        fontSize: isSmall ? "1.1rem" : isMedium ? "1.3rem" : '1.4rem',
+         marginTop:'.5rem'
       }}
         >Quality</Typography>
           </Box>
@@ -281,11 +298,11 @@ const HeroSectionMain = () => {
             <Box
   sx={{
     position: 'relative', // Relative positioning for the inner content
-    width: '7rem',
-    height: '7rem',
+    width:isSmall ? '4.5rem' : is1200 ? '6rem' : '7rem',
+    height:isSmall ? '4.5rem' : is1200 ? '6rem' : '7rem',
     borderRadius: '50%', // Make the shape circular
     background: 'conic-gradient(white 0% 33%, #ffffff 33% 66%, #ffffff 66% 90%, #61c2f1 90% 100%)', // Apply the gradient to the background
-    padding: '12px', // Space around the inner content to mimic border
+    padding: '10px', // Space around the inner content to mimic border
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -306,7 +323,7 @@ const HeroSectionMain = () => {
       sx={{
         color: 'white',
         fontWeight: '700',
-        fontSize: '1.8rem'
+        fontSize: isSmall ? '1.3rem' : isMedium ? '1.6rem' : '1.8rem'
       }}
     >
       95%
@@ -315,11 +332,13 @@ const HeroSectionMain = () => {
         </Box>
         <Typography  sx={{
         color: 'white',
-        fontWeight: '600',
-        fontSize: '1.4rem', marginTop:'.5rem'
+        fontWeight: '500',
+        fontSize: isSmall ? "1.1rem" : isMedium ? "1.3rem" : '1.4rem',
+         marginTop:'.5rem'
       }}
         >Quality</Typography>
           </Box>
+
 
         {/* =====================================================CIRCLE THREE================================================ */}
         <Box sx={{
@@ -330,11 +349,11 @@ const HeroSectionMain = () => {
             <Box
   sx={{
     position: 'relative', // Relative positioning for the inner content
-    width: '7rem',
-    height: '7rem',
+    width:isSmall ? '4.5rem' : is1200 ? '6rem' : '7rem',
+    height:isSmall ? '4.5rem' : is1200 ? '6rem' : '7rem',
     borderRadius: '50%', // Make the shape circular
     background: 'conic-gradient(white 0% 33%, #ffffff 33% 66%, #ffffff 66% 90%, #61c2f1 90% 100%)', // Apply the gradient to the background
-    padding: '12px', // Space around the inner content to mimic border
+    padding: '10px', // Space around the inner content to mimic border
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -355,7 +374,7 @@ const HeroSectionMain = () => {
       sx={{
         color: 'white',
         fontWeight: '700',
-        fontSize: '1.8rem'
+        fontSize: isSmall ? '1.3rem' : isMedium ? '1.6rem' : '1.8rem'
       }}
     >
       95%
@@ -364,29 +383,31 @@ const HeroSectionMain = () => {
         </Box>
         <Typography  sx={{
         color: 'white',
-        fontWeight: '600',
-        fontSize: '1.4rem', marginTop:'.5rem'
+        fontWeight: '500',
+        fontSize: isSmall ? "1.1rem" : isMedium ? "1.3rem" : '1.4rem',
+         marginTop:'.5rem'
       }}
         >Quality</Typography>
           </Box>
 
+
               </Box>
             </Grid>
-            <Grid item lg={6} md={6} sm={12} xs={12}>
+            <Grid item lg={5} md={5} sm={12} xs={12}>
               <Box sx={{
                 display:'flex', 
                 justifyContent:'space-around',
                  alignItems:'center',
                 marginTop:'1rem',
                  height:'100%',
-                 padding:isMedium ? '3% 10%' : '3% 10% 3% 3%',
+                 padding:isMedium ? '0% 10%' : '3% 10% 3% 3%',
                 //  backgroundColor:'white'
               }}>
               <Box>
-                <img src="/trustpilot.png" alt="" width={isSmall ? '140rem'  : isMedium ? '180rem' : '200rem'} />
+                <img src="/trustpilot.png" alt="" width={isSmall ?  "60%" : '80%'} />
               </Box>
               <Box>
-                <img src="/google.png" alt=""  width={isSmall ? '140rem'  : isMedium ? '180rem' : '200rem'}/>
+                <img src="/google.png" alt=""  width={isSmall ?  "60%" : '80%'} />
               </Box>
               </Box>
             </Grid>
