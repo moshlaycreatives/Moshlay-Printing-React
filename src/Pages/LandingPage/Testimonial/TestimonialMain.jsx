@@ -72,7 +72,7 @@ const TestimonialMain = () => {
             <Box
               sx={{
                 display: "flex",
-                justifyContent: "space-around",
+                justifyContent: "space-between",
                 alignItems: "end",
                 // marginTop: "1rem",
                 height: "100%",
@@ -97,7 +97,7 @@ const TestimonialMain = () => {
                   fontWeight: "400",
                   fontSize:isMedium ?  "0.8rem": is1200 ? '1rem': "1.1rem",
                   padding:is1200 ? "0.5rem 1rem": "0.5rem 1.5rem",
-                  marginRight: isMedium ? "0rem" : is1200 ?'1rem' :'0rem',
+                  marginRight: isMedium ? "0rem" : is1200 ?'1rem' :'1rem',
                   "&:hover": {
                     background: "#57adec",
                   },

@@ -72,14 +72,14 @@ const isSmall = useMediaQuery(theme.breakpoints.down('md'))
               justifyContent: "space-between",
             }}
           >
-            <Box sx={{paddingLeft:'5%', paddingTop:'3rem'}}>
+            <Box sx={{paddingLeft:'10%', paddingTop:'3rem'}}>
               <Typography sx={{fontSize:'2rem', fontWeight:600}}>Why Choose Us</Typography>
             </Box>
 
             <Box
               sx={{
                 backgroundColor: theme.palette.primary.main,
-                padding: "2rem",
+                padding: " 2rem  2rem 2rem 10%",
                 width: isSmall ? "70% " :"50%",
                 position: "absolute",
                 bottom: 0,
