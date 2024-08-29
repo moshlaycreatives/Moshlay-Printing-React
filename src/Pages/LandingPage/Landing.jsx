@@ -23,6 +23,8 @@ import RequestInstant from "./RequestInstant/RequestInstant";
 import HomePageSlider from "./HomePageSlider/HomePageSlider";
 import Faqs from "./FAQS/FAQS";
 import TestimonialMain from "./Testimonial/TestimonialMain";
+import HomePageBrands from "./HomePageBrands/HomePageBrands";
+import WhyChooseMain from "./WhyChooseUs/WhyChooseMain";
 
 
 const Landing = () => {
@@ -80,7 +82,10 @@ const Landing = () => {
 <TestimonialMain/>
 <Faqs/>
 
+<WhyChooseMain/>
 <RequestInstant/>
+<HomePageBrands/>
+
 <HomePageSlider/>
 
 </Page>

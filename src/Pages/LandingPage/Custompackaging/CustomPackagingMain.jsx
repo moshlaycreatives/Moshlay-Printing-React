@@ -54,14 +54,14 @@ const CustomPackagingMain = () => {
         // backgroundImage: 'linear-gradient(to right, #1c2844, #1c2844)',
         backgroundColor:'#cdeefb',
         width:'100%',
- 
+
     }}>
      <Box sx={{
          backgroundImage:'url(appdevplatfomsmask.png)',
          backgroundPosition:'center',
          backgroundRepeat:'no-repeat',
          backgroundSize:'cover',
-         padding:' 4rem 10%'
+         padding:' 2rem 10%'
      }}>
      <Box sx={{
              display:'flex',
@@ -71,7 +71,7 @@ const CustomPackagingMain = () => {
          }}>
            <Typography
              sx={{
-               fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
+               fontSize: isSmall ? "1.8rem" : isMedium ? "2rem" : "2.5rem",
                fontWeight: 600,
                color: 'black',
                textAlign: "center",
@@ -95,7 +95,7 @@ const CustomPackagingMain = () => {
            </Typography>
          </Box>
          <br /><br />
- 
+
          {/* ================================================CARDS =============================================== */}
  <Grid container spacing={6}>
            {listData.map((row, id) => (
@@ -121,7 +121,7 @@ const CustomPackagingMain = () => {
                  >
                    <img src={row.careerlogo} alt=""  />
                  </Box>
- 
+
                  <Box
                    sx={{
                      display: "flex",
@@ -159,9 +159,9 @@ const CustomPackagingMain = () => {
              </Grid>
            ))}
          </Grid>
- 
+
      </Box>
- 
+
     </Box>
     </>
   )

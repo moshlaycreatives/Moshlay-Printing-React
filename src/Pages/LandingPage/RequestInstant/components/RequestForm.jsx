@@ -8,6 +8,7 @@ import {
   Select,
   TextField,
   Typography,
+  useMediaQuery,
   useTheme,
 } from "@mui/material";
 import React, { useState } from "react";
@@ -56,7 +57,7 @@ const fileButtonStyles = {
 
 const RequestForm = () => {
   const theme = useTheme();
-
+const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
   const [fileName, setFileName] = useState("");
   const [captchaAnswer, setCaptchaAnswer] = useState("");
   const correctAnswer = 10; // For the math captcha 2 + 8 = 10
@@ -87,7 +88,7 @@ const RequestForm = () => {
             backgroundColor: theme.palette.primary.main,
           }}
         >
-          <Typography sx={{ color: "white", fontSize: "2rem" }}>
+          <Typography sx={{ color: "white", fontSize:isSmall ? "1.3rem" : "2rem" }}>
             GET CUSTOM QUOTE
           </Typography>
         </Box>
@@ -270,10 +271,10 @@ const RequestForm = () => {
             variant="contained"
             sx={{
               borderRadius: "9px",
-              fontSize: "1.3rem",
+              fontSize: isSmall ? "1.1rem": "1.3rem",
               fontWeight: 500,
               textTransform: "none",
-              padding: "0.5rem",
+              padding: "0.4rem",
               color: "white",
             }}
             fullWidth

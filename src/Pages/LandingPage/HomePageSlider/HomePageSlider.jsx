@@ -65,11 +65,11 @@ const HomePageSlider = () => {
   };
 
   return (
-    <div style={{width:'100%', overflow:'hidden'}}> {/* Adds padding to ensure no overflow */}
+    <div style={{width:'100%', overflow:'hidden', padding:'3rem 0rem'}}> {/* Adds padding to ensure no overflow */}
       <Slider {...settings}>
         {data.map((val, index) => (
           <div key={index} style={{}}>
-            <div style={{display:'flex', justifyContent:'center', alignItems:'center', marginRight:'0.5rem'}}>
+            <div style={{display:'flex', justifyContent:'center', alignItems:'center',marginLeft:'0.5rem', marginRight:'0.5rem'}}>
             <img
               src={val.image}
               alt={`Slide ${index + 1}`}
