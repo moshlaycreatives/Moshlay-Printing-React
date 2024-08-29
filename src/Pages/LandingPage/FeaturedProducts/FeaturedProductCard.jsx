@@ -41,10 +41,10 @@ const FeaturedProductCard = () => {
   return (
     <>
       <Box>
-        <Grid container spacing={5}>
+        <Grid container spacing={3}>
           {data.map((val, ind) => (
             <>
-              <Grid item lg={3} md={3} sm={12} xs={12}>
+              <Grid item lg={3} md={3} sm={6} xs={12}>
                 <Box>
                   <img src={val.image} width={'100%'} style={{borderRadius:'30px 0px 30px 0px'}}/>
                 </Box>

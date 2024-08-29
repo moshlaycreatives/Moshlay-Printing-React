@@ -5,7 +5,7 @@ import FeaturedProductCard from "./FeaturedProductCard";
 const FeaturedProductsMain = () => {
   return (
     <>
-      <Box sx={{ padding: "0rem 10% 3rem 10%" }}>
+      <Box sx={{ padding: "0rem 5% 3rem 5%" }}>
         <Box
           sx={{
             display: "flex",

@@ -21,7 +21,7 @@ const PremiumFinishMain = () => {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            padding: " 2rem 15%",
+            padding: " 2rem 10%",
           }}
         >
           <Box

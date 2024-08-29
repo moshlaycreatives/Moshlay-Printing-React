@@ -61,7 +61,7 @@ const CustomInspireMain = () => {
          backgroundPosition:'center',
          backgroundRepeat:'no-repeat',
          backgroundSize:'cover',
-         padding:' 4rem 10%'
+         padding:' 4rem 5%'
      }}>
      <Box sx={{
              display:'flex',
@@ -100,7 +100,7 @@ const CustomInspireMain = () => {
          <Box sx={{
          }}>
          <Grid container spacing={2} marginBottom={'10px'}>
-             <Grid  item lg={6} md={6} sm={12} xs={12}>
+             <Grid  item lg={6} md={6} sm={6} xs={12}>
                <Box sx={{
                 height:'auto',
                 position:'relative',
@@ -141,7 +141,7 @@ const CustomInspireMain = () => {
                  </Box>
                </Box>
              </Grid>
-             <Grid  item lg={6} md={6} sm={12} xs={12}>
+             <Grid  item lg={6} md={6} sm={6} xs={12}>
              <Box sx={{
                 height:'auto',
                 position:'relative',
@@ -186,7 +186,7 @@ const CustomInspireMain = () => {
          </Grid>
 
          <Grid container spacing={2} >
-             <Grid  item lg={4} md={6} sm={12} xs={12}>
+             <Grid  item lg={4} md={6} sm={6} xs={12}>
                <Box sx={{
                 height:'auto',
                 position:'relative',
@@ -227,7 +227,7 @@ const CustomInspireMain = () => {
                  </Box>
                </Box>
              </Grid>
-             <Grid  item lg={4} md={6} sm={12} xs={12}>
+             <Grid  item lg={4} md={6} sm={6} xs={12}>
              <Box sx={{
                 height:'auto',
                 position:'relative',
@@ -269,7 +269,7 @@ const CustomInspireMain = () => {
                  </Box>
                </Box>
              </Grid>
-             <Grid  item lg={4} md={6} sm={12} xs={12}>
+             <Grid  item lg={4} md={6} sm={6} xs={12}>
              <Box sx={{
                 height:'auto',
                 position:'relative',

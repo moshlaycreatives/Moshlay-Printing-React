@@ -3,7 +3,7 @@ import React from "react";
 
 const WhyChooseMain = () => {
   const theme = useTheme();
-const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
+const isSmall = useMediaQuery(theme.breakpoints.down('md'))
   const data = [
     {
       image: "/whychooseicon1.png",

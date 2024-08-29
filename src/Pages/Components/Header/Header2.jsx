@@ -499,7 +499,7 @@ const Header2 = () => {
     <Box
       sx={{
         width:'100%',
-        padding: "1% 10%",
+        padding: "1% 5%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

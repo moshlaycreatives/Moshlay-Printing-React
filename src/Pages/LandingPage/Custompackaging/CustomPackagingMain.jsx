@@ -61,7 +61,7 @@ const CustomPackagingMain = () => {
          backgroundPosition:'center',
          backgroundRepeat:'no-repeat',
          backgroundSize:'cover',
-         padding:' 2rem 10%'
+         padding:' 2rem 5%'
      }}>
      <Box sx={{
              display:'flex',
@@ -99,7 +99,7 @@ const CustomPackagingMain = () => {
          {/* ================================================CARDS =============================================== */}
  <Grid container spacing={6}>
            {listData.map((row, id) => (
-             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
+             <Grid key={id} item lg={4} md={6} sm={6} xs={12}>
                <Box
                  sx={{
                    height:'100%',

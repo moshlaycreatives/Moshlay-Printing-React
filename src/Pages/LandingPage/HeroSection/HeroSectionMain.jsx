@@ -45,7 +45,7 @@ const HeroSectionMain = () => {
               >
                 <img src="/heroimage.png" alt=""
                 style={{
-                  width: is1200 ?  "70%": is1500 ? '60%' : '60%',
+                  width: is1200 ?  "70%": is1500 ? '60%' : '65%',
                   zIndex: 2
                 }}
                 />
@@ -64,7 +64,7 @@ const HeroSectionMain = () => {
             >
               <Box
                 sx={{
-                  padding:isMedium ?  "20% 10% 5% 10%" : is1200 ?  "15% 5% 15% 15% ": "10% 5% 5% 15%",
+                  padding:isMedium ?  "20% 10% 5% 10%" : is1200 ?  "15% 5% 10% 15% ": "10% 5% 5% 15%",
                 }}
               >
                 <Typography
@@ -326,7 +326,7 @@ const HeroSectionMain = () => {
         fontSize: isSmall ? '1.3rem' : isMedium ? '1.6rem' : '1.8rem'
       }}
     >
-      95%
+      93%
     </Typography>
   </Box>
         </Box>
@@ -336,7 +336,7 @@ const HeroSectionMain = () => {
         fontSize: isSmall ? "1.1rem" : isMedium ? "1.3rem" : '1.4rem',
          marginTop:'.5rem'
       }}
-        >Quality</Typography>
+        >Sustainable</Typography>
           </Box>
 
 
@@ -377,7 +377,7 @@ const HeroSectionMain = () => {
         fontSize: isSmall ? '1.3rem' : isMedium ? '1.6rem' : '1.8rem'
       }}
     >
-      95%
+      90%
     </Typography>
   </Box>
         </Box>
@@ -387,7 +387,7 @@ const HeroSectionMain = () => {
         fontSize: isSmall ? "1.1rem" : isMedium ? "1.3rem" : '1.4rem',
          marginTop:'.5rem'
       }}
-        >Quality</Typography>
+        >Design</Typography>
           </Box>
 
 

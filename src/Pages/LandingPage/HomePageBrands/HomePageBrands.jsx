@@ -27,12 +27,13 @@ const HomePageBrands = () => {
           padding: "3rem 5%",
           display: "flex",
           alignItems: "center",
-          flexWrap: isSmall ? "wrap" : "no-wrap",
+          // flexWrap: isSmall ? "wrap" : "no-wrap",
+          flexWrap:'wrap',
           justifyContent: "center",
         }}
         gap={2}
       >
-        <Card sx={{ padding:"1rem" }}>
+        <Card sx={{ padding:"1rem", }}>
 
 <Box sx={{width:'10rem'}}>
 <img src="/partner1.png" width={"100%"} />

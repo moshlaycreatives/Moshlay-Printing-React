@@ -81,7 +81,7 @@ const Footer = () => {
                 }}
               >
                 Information
-                <Divider sx={{ color: "white" }} />
+                <Divider sx={{ color: "white" , backgroundColor:'#57adec', width:'5rem ', height:'1px'}} />
               </Typography>
               <Typography
                 sx={{
@@ -223,7 +223,8 @@ const Footer = () => {
                   color: "white",
                 }}
               >
-                INDUSTRIES <Divider sx={{ color: "white" }} />
+                INDUSTRIES 
+                <Divider sx={{ color: "white" , backgroundColor:'#57adec', width:'5rem ', height:'1px'}}  />
               </Typography>
               <Typography
                 sx={{
@@ -369,7 +370,8 @@ const Footer = () => {
                   color: "white",
                 }}
               >
-                CONTACT US <Divider sx={{ color: "white" }} />
+                CONTACT US
+                 <Divider sx={{ color: "white" , backgroundColor:'#57adec', width:'5rem ', height:'1px'}}  />
               </Typography>
               <Typography
                 sx={{
