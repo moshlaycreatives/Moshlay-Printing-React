@@ -523,14 +523,14 @@ const Header2 = () => {
           <img
             src="/logo.png"
             alt=""
-            style={{ maxWidth: isMedium ? "100px" : "100px", height: "auto", cursor:'pointer' }}
+            style={{ maxWidth: isMedium ? "100px" : "120px", height: "auto", cursor:'pointer' }}
             onClick={()=>{navigate("/")}}
           />
         </Box>
         <Box
           sx={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "end",
             alignItems: " center",
             // marginBottom:'1rem',
             gap: 2,
@@ -776,7 +776,7 @@ const Header2 = () => {
                   onClick={handleAnchorElClickSolution}
                   style={{ cursor: "pointer" }}
                 >
-                  Digital Solution
+                  Box By Industry
                 </Typography>
                 <Typography
                   sx={{
@@ -835,7 +835,7 @@ const Header2 = () => {
                   onClick={handleAnchorElClickMarketing}
                   style={{ cursor: "pointer" }}
                 >
-                  Digital Marketing
+                 Shapes & Style
                 </Typography>
                 <Typography
                   sx={{
@@ -882,7 +882,7 @@ const Header2 = () => {
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
               >
-                Company
+                Printing Products
               </Typography>
               <Divider sx={{
                   width:'100%',
@@ -896,7 +896,7 @@ const Header2 = () => {
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
               >
-                Blogs
+                Premium Finishes
               </Typography>
               <Divider sx={{
                   width:'100%',
@@ -910,7 +910,7 @@ const Header2 = () => {
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
               >
-                Careers
+                Packaging News
               </Typography>
               <Divider sx={{
                   width:'100%',
@@ -919,7 +919,7 @@ const Header2 = () => {
                 backgroundColor:theme.palette.primary.main
                 }}/>
 
-              <Typography
+              {/* <Typography
                 onClick={() => handleClickMenu("/contact")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
@@ -929,14 +929,14 @@ const Header2 = () => {
                 }}
               >
                 Contact
-              </Typography>
+              </Typography> */}
 
-              <Divider sx={{
+              {/* <Divider sx={{
                   width:'100%',
                   marginTop:'.5rem',
                   cursor:'pointer',
                 backgroundColor:theme.palette.primary.main
-                }}/>
+                }}/> */}
             </Box>
           </Box>
         </Drawer>

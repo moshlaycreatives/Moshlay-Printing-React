@@ -79,10 +79,10 @@ const Landing = () => {
 <CustomPackagingMain/>
 <CustomInspireMain/>
 <PremiumFinishMain/>
+<WhyChooseMain/>
 <TestimonialMain/>
 <Faqs/>
 
-<WhyChooseMain/>
 <RequestInstant/>
 <HomePageBrands/>
 
