@@ -121,16 +121,29 @@ const RequestInstantText = () => {
 
         <br />
         <Typography sx={{ fontSize: "1.2rem", fontWeight: 600 }}>
-          Differentiate Your Business
+        Benefits from High-Grade Materials
         </Typography>
 
         <Typography sx={{ color: "grey" }}>
-          We demonstrate your business identity using your brand name, logo,
-          tagline, and message in a visually pleasing way that makes your
-          product look different in the market.
+        High-grade materials are often more resistant to wear, tear, and damage, leading to longer-lasting product packing.
         </Typography>
-
+       <br />
+        <Typography sx={{ color: "grey" }}>
+        These materials can enhance the performance of products, such as improving insulation, strength, or conductivity.
+        </Typography>
         <br />
+        <Typography sx={{ color: "grey" }}>
+        High-grade materials often have a superior appearance, adding value and desirability to products.
+        </Typography> 
+        <br />
+        <Typography sx={{ color: "grey" }}>
+        In certain circumstances, high-grade materials can improve safety by being more resistant to hazards like fire, chemicals, or impact.
+        </Typography>
+        <br />
+        <Typography sx={{ color: "grey" }}>
+        Products made with high-grade materials tend to retain their value over time, making them a better investment.
+        </Typography>
+        
       </Box>
     </>
   );

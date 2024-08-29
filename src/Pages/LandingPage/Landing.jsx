@@ -65,6 +65,7 @@ const Landing = () => {
   top:0, left:0,
   display:'flex',
   justifyContent:'end',
+  // transition:'.5s',
    background:isScroll || isMedium ? 'white' : 'transparent',
   zIndex:10,
   top: isScroll  || isMedium ? 0 :30,
