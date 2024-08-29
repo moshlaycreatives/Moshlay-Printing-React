@@ -12,39 +12,39 @@ const CustomPackagingMain = () => {
 
     {
       careerlogo: "custompack1.png",
-      careertitle: "Native Mobile App Development",
+      careertitle: "Starting From 100 Boxes",
       carrerdes:
-        "Native apps are platform-specific, offering optimal performance and device access. However, they require separate development for each platform.",
+        "Check our packaging quality first by ordering a minimum of 100 boxes.",
     },
     {
-      careerlogo: "custompack1.png",
-      careertitle: "Hybrid Mobile App Development",
+      careerlogo: "custompack2.png",
+      careertitle: "High Quality Offset Printing",
       carrerdes:
-        "Hybrid apps combine native and web elements, enabling cross-platform deployment. They balance performance and efficiency but may have limitations compared to fully native apps.",
+        "Aesthetically showcase your brand identity by trusting our high-end printing.",
     },
     {
-      careerlogo: "custompack1.png",
-      careertitle: "Progressive Web App Development",
+      careerlogo: "custompack3.png",
+      careertitle: "Free Die & Plates Charge",
       carrerdes:
-        "PWAs offer a native-like experience without requiring app store downloads. They use web technologies and can provide offline functionality and push notifications.",
+        "Make your product visually appealing by getting free die and plate designs.",
     },
     {
-      careerlogo: "custompack1.png",
-      careertitle: "Wearables and Embedded Software",
+      careerlogo: "custompack4.png",
+      careertitle: "Fast Turnaround 10-12 Business Days",
       carrerdes:
-        "These specialized apps focus on wearable devices and IoT systems. They often have unique requirements for power consumption, performance, and hardware interaction.",
+        "Win over your customers to deliver quality products using our customized packaging.",
     },
     {
-      careerlogo: "custompack1.png",
-      careertitle: "Progressive Web App Development",
+      careerlogo: "custompack5.png",
+      careertitle: "Competitive Pricing",
       carrerdes:
-        "PWAs offer a native-like experience without requiring app store downloads. They use web technologies and can provide offline functionality and push notifications.",
+        "Get affordable custom packaging solutions without compromising quality.",
     },
     {
-      careerlogo: "custompack1.png",
-      careertitle: "Wearables and Embedded Software",
+      careerlogo: "custompack6.png",
+      careertitle: "Custom Design, Sizes & Style",
       carrerdes:
-        "These specialized apps focus on wearable devices and IoT systems. They often have unique requirements for power consumption, performance, and hardware interaction.",
+        "Improve your customer’s unboxing experience using our unique customized.",
     },
   ];
 
