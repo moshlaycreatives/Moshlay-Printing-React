@@ -25,6 +25,7 @@ import { useDispatch, useSelector } from "react-redux";
 // import { logout } from "../../store/actions/authActions";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { MdOutlineMessage } from "react-icons/md";
+import SubHeader from "./SubHeader";
 
 const Header = () => {
   const [anchorSolutionEl, setAnchorSolutionEl] = useState(null);
@@ -120,13 +121,15 @@ const Header = () => {
   };
 
   return (
+    <>
+  
     <Box
       sx={{
         //  width:'100%',
-        padding: "1% 5%",
+        padding: "0% 5%",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "end",
         position: "sticky",
         top: 0,
         zIndex: 10000000,
@@ -548,6 +551,7 @@ const Header = () => {
         </Drawer>
       </Box>
     </Box>
+    </>
   );
 };
 

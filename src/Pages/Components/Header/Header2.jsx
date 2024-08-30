@@ -400,6 +400,7 @@ import { useDispatch, useSelector } from "react-redux";
 // import { logout } from "../../store/actions/authActions";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { MdOutlineMessage } from "react-icons/md";
+import SubHeader from "./SubHeader";
 
 const Header2 = () => {
   const [anchorSolutionEl, setAnchorSolutionEl] = useState(null);
@@ -496,6 +497,7 @@ const Header2 = () => {
   };
 
   return (
+    <>
     <Box
       sx={{
         width:'100%',
@@ -942,6 +944,7 @@ const Header2 = () => {
         </Drawer>
       </Box>
     </Box>
+    </>
   );
 };
 

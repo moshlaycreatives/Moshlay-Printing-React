@@ -11,7 +11,7 @@ const HeroSectionMain = () => {
 
   return (
     <>
-      <Box>              
+      <Box marginTop={'3rem'}>              
         <Grid container>
           <Grid item lg={3.5} md={2.5} sm={4} xs={4} sx={{
             display: isMedium ? 'none' : 'block',
