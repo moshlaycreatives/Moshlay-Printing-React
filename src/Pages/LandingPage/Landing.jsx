@@ -25,6 +25,7 @@ import Faqs from "./FAQS/FAQS";
 import TestimonialMain from "./Testimonial/TestimonialMain";
 import HomePageBrands from "./HomePageBrands/HomePageBrands";
 import WhyChooseMain from "./WhyChooseUs/WhyChooseMain";
+import SubHeader from "../Components/Header/SubHeader";
 
 
 const Landing = () => {
@@ -60,20 +61,26 @@ const Landing = () => {
 <Page title='Moshlay Printing'>
 
 <Box sx={{
+  position:'relative'
+}}>
+
+<Box sx={{
   width:'100%',
-  position:isScroll ? 'fixed' : 'absolute',
-  top:0, left:0,
+  position:isScroll ? 'sticky' : 'absolute',
+  top:10, left:0,
   display:'flex',
   justifyContent:'end',
   // transition:'.5s',
    background:isScroll || isMedium ? 'white' : 'transparent',
   zIndex:10,
-  top: isScroll  || isMedium ? 0 :30,
-  boxShadow: isScroll ? '1px 1px 15px black' : '0'
+  // top: isScroll && isMedium ? 53  :50,
+
+  top:isScroll ? (isSmall ? 48 : isMedium ? 55 : 50) : (isSmall ? 2 : isMedium ? 7 : 50 ),
+
+  // boxShadow: isScroll ? '1px 1px 15px black' : '0'
 }}>
 {isScroll || isMedium ? <Header2/> : <Header/>}
 </Box>
-
 <HeroSectionMain/>
 <WholeSaleSectionMain/>
 <FeaturedProductsMain/>
@@ -88,6 +95,7 @@ const Landing = () => {
 <HomePageBrands/>
 
 <HomePageSlider/>
+</Box>
 
 </Page>
     </>
