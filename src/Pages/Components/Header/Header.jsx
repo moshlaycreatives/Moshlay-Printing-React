@@ -122,7 +122,7 @@ const Header = () => {
 
   return (
     <>
-  
+
     <Box
       sx={{
         //  width:'100%',
@@ -174,15 +174,15 @@ const Header = () => {
             aria-expanded={openMenuSolution ? "true" : undefined}
             onClick={handleAnchorElClickSolution}
             style={{ cursor: "pointer", fontSize: is1200 ? ".8rem" : "1rem" }}
-            
+
             sx={{
               color: 'white',
               transition: 'color .5s',
               '&:hover': {
-                color: theme => theme.palette.primary.main, 
+                color: theme => theme.palette.primary.main,
               },
             }}
-            
+
           >
            Box By Industry
           </Typography>
@@ -210,19 +210,12 @@ const Header = () => {
             zIndex:150000000001
           }}
           >
-            <MenuItem  
-              onClick={() =>
-                handleAnchorClose(setAnchorSolutionEl, "/web-development")
-              }
-            >
-              Web Development
-            </MenuItem>
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorSolutionEl, "/app-development")
+                handleAnchorClose(setAnchorSolutionEl, "/")
               }
             >
-              App Development
+              Custom
             </MenuItem>
           </Menu>
 
@@ -242,7 +235,7 @@ const Header = () => {
               color: 'white',
               transition: 'color .5s',
               '&:hover': {
-                color: theme => theme.palette.primary.main, 
+                color: theme => theme.palette.primary.main,
               },
             }}
           >
@@ -263,7 +256,7 @@ const Header = () => {
             <MdOutlineArrowDropDown />
           </Typography>
           </Box>
-          
+
           <Menu
             id="digital-marketing"
             anchorEl={anchorMarketingEl}
@@ -275,52 +268,46 @@ const Header = () => {
           >
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorMarketingEl, "/about")
+                handleAnchorClose(setAnchorMarketingEl, "/")
               }
             >
-              Example 1
+              Custom
             </MenuItem>
-            <MenuItem
-              onClick={() =>
-                handleAnchorClose(setAnchorMarketingEl, "/contact")
-              }
-            >
-              Example 2
-            </MenuItem>
+
           </Menu>
 
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("/about")}
+            onClick={() => handleClickMenu("/")}
             sx={{ cursor: "pointer", fontSize: is1200 ? ".8rem" : "1rem",
               color: 'white',
               transition: 'color .5s',
               '&:hover': {
-                color: theme => theme.palette.primary.main, } 
+                color: theme => theme.palette.primary.main, }
              }}
           >
             Printing Products
           </Typography>
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("/blogs")}
+            onClick={() => handleClickMenu("/")}
             sx={{ cursor: "pointer", fontSize: is1200 ? ".8rem" : "1rem",
               color: 'white',
               transition: 'color .5s',
               '&:hover': {
-                color: theme => theme.palette.primary.main, } 
+                color: theme => theme.palette.primary.main, }
              }}
           >
            Premium Finishes
           </Typography>
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("/careers")}
+            onClick={() => handleClickMenu("/")}
             sx={{ cursor: "pointer", fontSize: is1200 ? ".8rem" : "1rem",
               color: 'white',
               transition: 'color .5s',
               '&:hover': {
-                color: theme => theme.palette.primary.main, } 
+                color: theme => theme.palette.primary.main, }
              }}
           >
             Packaging News
@@ -332,7 +319,7 @@ const Header = () => {
               color: 'white',
               transition: 'color .5s',
               '&:hover': {
-                color: theme => theme.palette.primary.main, } 
+                color: theme => theme.palette.primary.main, }
              }}
           >
             Contact
@@ -362,7 +349,7 @@ const Header = () => {
         alignItems:'center'
        }}>
        {/* <Box width={'50%'} sx={{
-        
+
        }}>
           <img src="logo.svg" alt=""  width={'50%'}/>
         </Box> */}
@@ -377,7 +364,7 @@ const Header = () => {
           open={drawerOpen}
           onClose={handleDrawerClose}
           sx={{ zIndex: 1300000000 }}
-          
+
         >
           <Box sx={{ width: 250, padding: "20px" }}>
             <Box sx={{ gap: 5 }}>
@@ -396,7 +383,7 @@ const Header = () => {
                   onClick={handleAnchorElClickSolution}
                   style={{ cursor: "pointer" }}
                 >
-                  Digital Solution
+                  Box By Industry
                 </Typography>
                 <Typography
                   sx={{
@@ -408,7 +395,7 @@ const Header = () => {
                   <MdOutlineArrowDropDown  style={{marginTop:'.5rem'}}/>
                 </Typography>
           </Box>
-                
+
                 <Menu
                   id="digital-solution"
                   anchorEl={anchorSolutionEl}
@@ -418,18 +405,12 @@ const Header = () => {
                 >
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorSolutionEl, "/about")
+                      handleAnchorClose(setAnchorSolutionEl, "/")
                     }
                   >
-                    Example 1
+                    Custom
                   </MenuItem>
-                  <MenuItem
-                    onClick={() =>
-                      handleAnchorClose(setAnchorSolutionEl, "/contact")
-                    }
-                  >
-                    Example 2
-                  </MenuItem>
+
                 </Menu>
               </Box>
               <Divider sx={{
@@ -453,7 +434,7 @@ const Header = () => {
                   onClick={handleAnchorElClickMarketing}
                   style={{ cursor: "pointer" }}
                 >
-                  Digital Marketing
+                  Shapes & Style
                 </Typography>
                 <Typography
                   sx={{
@@ -465,29 +446,23 @@ const Header = () => {
                   <MdOutlineArrowDropDown  style={{marginTop:'.5rem'}}/>
                 </Typography>
             </Box>
-                
+
                 <Menu
                   id="digital-marketing"
                   anchorEl={anchorMarketingEl}
                   open={openMenuMarketing}
                   onClose={() => setAnchorMarketingEl(null)}
                   zIndex={ 150000000001}
-                  
+
                 >
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorMarketingEl, "/about")
+                      handleAnchorClose(setAnchorMarketingEl, "/")
                     }
                   >
-                    Example 1
+                    Custom
                   </MenuItem>
-                  <MenuItem
-                    onClick={() =>
-                      handleAnchorClose(setAnchorMarketingEl, "/contact")
-                    }
-                  >
-                    Example 2
-                  </MenuItem>
+
                 </Menu>
               </Box>
               <Divider sx={{
@@ -499,48 +474,37 @@ const Header = () => {
 
 
               <Typography
-                onClick={() => handleClickMenu("/about")}
+                onClick={() => handleClickMenu("/")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
+                marginTop={'.5rem'}
               >
-                Company
+                Printing Products
+              </Typography>
+              <Divider sx={{
+                width:'100%',
+                backgroundColor:theme.palette.primary.main
+
+              }}/>
+              <Typography
+                onClick={() => handleClickMenu("/")}
+                cursor={"pointer"}
+                marginBottom={'.5rem'}
+                marginTop={'.5rem'}
+              >
+                Premium Finishes
               </Typography>
               <Divider sx={{
                 width:'100%',
                 backgroundColor:theme.palette.primary.main
               }}/>
               <Typography
-                onClick={() => handleClickMenu("/blogs")}
+                onClick={() => handleClickMenu("/")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
               >
-                Blogs
-              </Typography>
-              <Divider sx={{
-                width:'100%',
-                backgroundColor:theme.palette.primary.main
-              
-              }}/>
-              <Typography
-                onClick={() => handleClickMenu("/careers")}
-                cursor={"pointer"}
-                marginBottom={'.5rem'}
-                marginTop={'.5rem'}
-              >
-                Careers
-              </Typography>
-              <Divider sx={{
-                width:'100%',
-                backgroundColor:theme.palette.primary.main
-              }}/>
-              <Typography
-                onClick={() => handleClickMenu("/contact")}
-                cursor={"pointer"}
-                marginBottom={'.5rem'}
-                marginTop={'.5rem'}
-              >
-                Contact
+                Packaging News
               </Typography>
               <Divider sx={{
                 width:'100%',
@@ -590,7 +554,7 @@ export default Header;
 //   const openMenuSolution = Boolean(anchorSolutionEl);
 //   const openMenuMarketing = Boolean(anchorMarketingEl);
 
- 
+
 //   const handleAnchorElClickSolution = (e) => {
 //     setAnchorSolutionEl(e.currentTarget);
 //   };
@@ -721,13 +685,13 @@ export default Header;
 //           gap:2,
 //           width:'80%'
 //         }}>
-//         <Typography 
+//         <Typography
 //         aria-controls="digital-solution"
-//         aria-haspopup="true" 
+//         aria-haspopup="true"
 //         aria-expanded={ openMenuSolution ? 'true' : undefined}
 //         onClick={handleAnchorElClickSolution}
 //         style={{cursor:'pointer', fontSize:isMedium ? ".8rem" : '1rem'}}
-//         // display={"flex"} 
+//         // display={"flex"}
 //         >
 //           Digital Solution
 //         </Typography>
@@ -749,11 +713,11 @@ export default Header;
 //         </Typography>
 //         <Typography
 //         aria-controls="digital-marketing"
-//         aria-haspopup="true" 
+//         aria-haspopup="true"
 //         aria-expanded={ openMenuMarketing ? 'true' : undefined}
 //         onClick={handleAnchorElClickMarketing}
 //         style={{cursor:'pointer', fontSize:isMedium ? ".8rem" : '1rem'}}>
-//           Digital Marketing 
+//           Digital Marketing
 //         </Typography>
 //         <Typography sx={{
 //             fontSize:'1.5rem',
@@ -763,7 +727,7 @@ export default Header;
 //             textAlign:'center',
 //             display:'flex',
 //             color:theme.palette.primary.main
-//           }}><MdOutlineArrowDropDown /></Typography>  
+//           }}><MdOutlineArrowDropDown /></Typography>
 //         <Typography>
 //         <Menu id="digital-marketing" anchorEl={anchorMarketingEl} open={openMenuMarketing} onClose={handleAchorClose}>
 //             <MenuItem onClick={()=> handleAchorClose(setAnchorMarketingEl, 'about-section')}> Example 1</MenuItem>
@@ -788,7 +752,7 @@ export default Header;
 //           sx={{
 //             display: "flex",
 //             alignItems: "end",
-//             justifyContent:'end', 
+//             justifyContent:'end',
 //             width:'25%',
 //             cursor: "pointer",
 //             marginBottom:'-.5rem'

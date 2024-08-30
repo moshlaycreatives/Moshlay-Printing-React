@@ -76,7 +76,7 @@ const Landing = () => {
   // top: isScroll && isMedium ? 53  :50,
 
   top:isScroll ? (isSmall ? 48 : isMedium ? 55 : 50) : (isSmall ? 2 : isMedium ? 7 : 50 ),
-
+boxShadow: isScroll ? '0 4px 8px rgba(0, 0, 0, 0.3)' : 'none',
   // boxShadow: isScroll ? '1px 1px 15px black' : '0'
 }}>
 {isScroll || isMedium ? <Header2/> : <Header/>}
