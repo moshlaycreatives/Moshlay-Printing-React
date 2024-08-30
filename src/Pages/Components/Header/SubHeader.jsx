@@ -16,7 +16,8 @@ const SubHeader = () => {
         sx={{
           background: theme.palette.primary.main,
          position:'fixed', top:0,left:0, 
-        zIndex:11, width:'100%'
+        zIndex:isMedium ?  9 : 11,
+         width:'100%'
          
 
 
