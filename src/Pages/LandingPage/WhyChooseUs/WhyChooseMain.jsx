@@ -85,10 +85,11 @@ const isSmall = useMediaQuery(theme.breakpoints.down('md'))
                 bottom: 0,
               }}
             >
-              <Typography>
+              <Typography sx={{fontWeight:600, fontSize:'1.1rem'}}>
                 Custom Packaging Boxes with Logo Make Your Brand Speak Itself.
               </Typography>
 
+<br/>
               <Typography>
                 The packaging industry is highly lucrative for product-selling
                 businesses that can bring in enormous profits for the business.

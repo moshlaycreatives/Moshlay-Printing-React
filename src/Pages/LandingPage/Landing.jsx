@@ -70,17 +70,16 @@ const Landing = () => {
   top:10, left:0,
   display:'flex',
   justifyContent:'end',
-  // transition:'.5s',
    background:isScroll || isMedium ? 'white' : 'transparent',
   zIndex:10,
-  // top: isScroll && isMedium ? 53  :50,
-
+  
   top:isScroll ? (isSmall ? 48 : isMedium ? 55 : 50) : (isSmall ? 2 : isMedium ? 7 : 50 ),
 boxShadow: isScroll ? '0 4px 8px rgba(0, 0, 0, 0.3)' : 'none',
-  // boxShadow: isScroll ? '1px 1px 15px black' : '0'
 }}>
 {isScroll || isMedium ? <Header2/> : <Header/>}
 </Box>
+
+
 <HeroSectionMain/>
 <WholeSaleSectionMain/>
 <FeaturedProductsMain/>

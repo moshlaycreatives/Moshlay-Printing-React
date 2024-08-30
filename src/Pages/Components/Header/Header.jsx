@@ -194,7 +194,7 @@ const Header = () => {
               // marginTop: "1rem",
               display: "flex",
               textAlign: "center",
-              color: theme.palette.primary.main,
+              // color: theme.palette.primary.main,
               marginRight:'.2rem'
             }}
           >
@@ -249,7 +249,7 @@ const Header = () => {
               // marginRight: "-1rem",
               textAlign: "center",
               display: "flex",
-              color: theme.palette.primary.main,
+              // color: theme.palette.primary.main,
                marginRight:'.2rem'
             }}
           >
