@@ -54,7 +54,7 @@ const CustomInspireMain = () => {
         // backgroundImage: 'linear-gradient(to right, #1c2844, #1c2844)',
         // backgroundColor:'#cdeefb',
         width:'100%',
- 
+
     }}>
      <Box sx={{
          backgroundImage:'url(appdevplatfomsmask.png)',
@@ -95,7 +95,7 @@ const CustomInspireMain = () => {
            </Typography>
          </Box>
          <br /><br />
- 
+
          {/* ================================================CARDS =============================================== */}
          <Box sx={{
          }}>
@@ -109,7 +109,7 @@ const CustomInspireMain = () => {
                     opacity: 1, // Make it fully visible on hover
                   }
                }}>
-                 <img src="/custominspire1.png" alt="" width={'100%'} height={'300rem'}/>
+                 <img src="/custominspire1.png" alt="" width={'100%'} height={'auto'}/>
                  <Box className="overlay" sx={{
                     position:'absolute',
                     backgroundColor:'#00000073',
@@ -117,7 +117,7 @@ const CustomInspireMain = () => {
                     height:'100%',
                     top:0,
                     left:0,
-                    right:0, 
+                    right:0,
                     bottom:0,
                     display:'flex',
                     justifyContent:'center',
@@ -127,10 +127,10 @@ const CustomInspireMain = () => {
                      transition: 'opacity 0.5s, background-color 0.5s',
                     //  '&:hover':{
                     //      visibility:'visible',
-                       
+
                     //  }
                  }}>
-                    <Typography 
+                    <Typography
                      sx={{
                         fontSize: "1.8rem",
                         fontWeight: 600,
@@ -151,7 +151,7 @@ const CustomInspireMain = () => {
                   }
                }}
                >
-                 <img src="/custominspire2.png" alt=""  width={'100%'} height={'300rem'} />
+                 <img src="/custominspire2.png" alt=""  width={'100%'} height={'auto'} />
                  <Box className="overlay" sx={{
                     position:'absolute',
                     backgroundColor:'#00000073',
@@ -159,7 +159,7 @@ const CustomInspireMain = () => {
                     height:'100%',
                     top:0,
                     left:0,
-                    right:0, 
+                    right:0,
                     bottom:0,
                     display:'flex',
                     justifyContent:'center',
@@ -169,10 +169,10 @@ const CustomInspireMain = () => {
                      transition: 'opacity 0.5s, background-color 0.5s',
                     //  '&:hover':{
                     //      visibility:'visible',
-                       
+
                     //  }
                  }}>
-                    <Typography 
+                    <Typography
                      sx={{
                         fontSize: "1.8rem",
                         fontWeight: 600,
@@ -195,7 +195,7 @@ const CustomInspireMain = () => {
                     opacity: 1, // Make it fully visible on hover
                   }
                }}>
-                 <img src="/custominspire3.png" alt="" width={'100%'} height={'300rem'}/>
+                 <img src="/custominspire3.png" alt="" width={'100%'} height={'auto'}/>
                  <Box className="overlay" sx={{
                     position:'absolute',
                     backgroundColor:'#00000073',
@@ -203,7 +203,7 @@ const CustomInspireMain = () => {
                     height:'100%',
                     top:0,
                     left:0,
-                    right:0, 
+                    right:0,
                     bottom:0,
                     display:'flex',
                     justifyContent:'center',
@@ -213,10 +213,10 @@ const CustomInspireMain = () => {
                      transition: 'opacity 0.5s, background-color 0.5s',
                     //  '&:hover':{
                     //      visibility:'visible',
-                       
+
                     //  }
                  }}>
-                    <Typography 
+                    <Typography
                      sx={{
                         fontSize: "1.8rem",
                         fontWeight: 600,
@@ -237,7 +237,7 @@ const CustomInspireMain = () => {
                   }
                }}
                >
-                 <img src="/custominspire4.png" alt=""  width={'100%'} height={'300rem'} />
+                 <img src="/custominspire4.png" alt=""  width={'100%'} height={'auto'} />
                  <Box className="overlay" sx={{
                     position:'absolute',
                     backgroundColor:'#00000073',
@@ -245,7 +245,7 @@ const CustomInspireMain = () => {
                     height:'100%',
                     top:0,
                     left:0,
-                    right:0, 
+                    right:0,
                     bottom:0,
                     display:'flex',
                     justifyContent:'center',
@@ -255,10 +255,10 @@ const CustomInspireMain = () => {
                      transition: 'opacity 0.5s, background-color 0.5s',
                     //  '&:hover':{
                     //      visibility:'visible',
-                       
+
                     //  }
                  }}>
-                    <Typography 
+                    <Typography
                      sx={{
                         fontSize: "1.8rem",
                         fontWeight: 600,
@@ -279,7 +279,7 @@ const CustomInspireMain = () => {
                   }
                }}
                >
-                 <img src="/custominspire5.png" alt=""  width={'100%'} height={'300rem'} />
+                 <img src="/custominspire5.png" alt=""  width={'100%'} height={'auto'} />
                  <Box className="overlay" sx={{
                     position:'absolute',
                     backgroundColor:'#00000073',
@@ -287,7 +287,7 @@ const CustomInspireMain = () => {
                     height:'100%',
                     top:0,
                     left:0,
-                    right:0, 
+                    right:0,
                     bottom:0,
                     display:'flex',
                     justifyContent:'center',
@@ -297,10 +297,10 @@ const CustomInspireMain = () => {
                      transition: 'opacity 0.5s, background-color 0.5s',
                     //  '&:hover':{
                     //      visibility:'visible',
-                       
+
                     //  }
                  }}>
-                    <Typography 
+                    <Typography
                      sx={{
                         fontSize: "1.8rem",
                         fontWeight: 600,
@@ -313,9 +313,9 @@ const CustomInspireMain = () => {
              </Grid>
          </Grid>
          </Box>
- 
+
      </Box>
- 
+
     </Box>
     </>
   )

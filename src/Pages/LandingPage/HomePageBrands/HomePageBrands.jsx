@@ -12,6 +12,7 @@ const HomePageBrands = () => {
           justifyContent: "center",
           textAlign: "center",
           flexDirection: "column",
+          paddingTop:'2rem'
         }}
       >
         <Typography sx={{ fontSize: "2rem", fontWeight: 600 }}>

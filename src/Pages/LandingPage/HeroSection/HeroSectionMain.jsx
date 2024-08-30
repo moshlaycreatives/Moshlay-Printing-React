@@ -11,9 +11,9 @@ const HeroSectionMain = () => {
 
   return (
     <>
-      <Box>              
+      <Box>
         <Grid container>
-          <Grid item lg={3.5} md={2.5} sm={4} xs={4} sx={{
+          <Grid item lg={2.5} md={2.5} sm={4} xs={4} sx={{
             display: isMedium ? 'none' : 'block',
           }}>
             <Box
@@ -30,7 +30,7 @@ const HeroSectionMain = () => {
                 }}
               >
                 <img src="/logo.png" alt="" style={{
-                  width:is1200 ? '60%': '45%'
+                  width:is1200 ? '60%': '60%'
                 }} />
               </Box>
               <Box
@@ -40,19 +40,19 @@ const HeroSectionMain = () => {
                   display: "flex",
                   justifyContent: "end",
                   marginRight: "-5rem",
-                  marginTop:is1200 ? '5rem ' : '0rem',
+                  marginTop:is1200 ? '5rem ' : '3rem',
                 }}
               >
                 <img src="/heroimage.png" alt=""
                 style={{
-                  width: is1200 ?  "70%": is1500 ? '60%' : '65%',
+                  width: is1200 ?  "70%": is1500 ? '60%' : '75%',
                   zIndex: 2
                 }}
                 />
               </Box>
             </Box>
           </Grid>
-          <Grid item lg={8.5} md={9.5} sm={12} xs={12}>
+          <Grid item lg={9.5} md={9.5} sm={12} xs={12}>
             <Box
               sx={{
                 backgroundImage: "url(/herobg.png)",
@@ -142,7 +142,7 @@ const HeroSectionMain = () => {
                 <Box
                   sx={{
                     marginTop: "1rem",
-                    marginBottom: "2rem",
+                    marginBottom: "0rem",
                   }}
                 >
                   {/* ===============================================================REVIEW SECTION=================================== */}
@@ -200,10 +200,10 @@ const HeroSectionMain = () => {
                   <Typography
                     sx={{
                       fontSize: {
-                        xs: "1.5rem",
-                        sm: "2.5rem",
-                        md: "3.1rem",
-                        lg: "4rem",
+                        xs: "2rem",
+                        sm: "3.5rem",
+                        md: "4.1rem",
+                        lg: "6rem",
                       },
                       fontWeight: "700",
                       color: "transparent",
@@ -222,9 +222,9 @@ const HeroSectionMain = () => {
         </Grid>
 
         {/* =======================================BOTTOM BAR============================================ */}
-        <Box 
+        <Box
         sx={{
-          marginTop: isMedium ?' 0rem' :  '-3rem', 
+          marginTop: isMedium ?' 0rem' :  '-3rem',
           // padding:'0% 10%',
           // backgroundImage:'linear-Gradient(to right, #57adec 0% 40%, white 40% 100%)',
         }}>
@@ -232,11 +232,11 @@ const HeroSectionMain = () => {
             <Grid item lg={7} md={7} sm={12} xs={12}>
               <Box
                 sx={{
-                  display:'flex', 
+                  display:'flex',
                   flexWrap:'wrap',
                   justifyContent:'space-between',
                   backgroundColor: "#57adec",
-                  padding: isMedium ? '3% 10%' : "3% 3% 3% 15%", 
+                  padding: isMedium ? '3% 10%' : "3% 3% 3% 15%",
                 }}
               >
            {/* =====================================================CIRCLE ONE================================================ */}
@@ -395,7 +395,7 @@ const HeroSectionMain = () => {
             </Grid>
             <Grid item lg={5} md={5} sm={12} xs={12}>
               <Box sx={{
-                display:'flex', 
+                display:'flex',
                 justifyContent:'space-around',
                  alignItems:'center',
                 marginTop:'1rem',
