@@ -10,7 +10,8 @@ import {
   IconButton,
 } from "@mui/material";
 import { IoIosCheckmarkCircleOutline, IoIosMedal } from "react-icons/io";
-import { LiaQuoteRightSolid } from "react-icons/lia";
+import { LiaQuoteLeftSolid } from "react-icons/lia";
+import { LuQuote } from "react-icons/lu";
 
 const TestimonialMain = () => {
   const theme = useTheme();
@@ -189,11 +190,24 @@ const TestimonialMain = () => {
               </Typography>
 
               <Box sx={{
-                // justifySelf:'end'
+                
                 textAlign:'end'
               }}>
-{/* <Typography sx={{fontSize:'3rem'}}>”</Typography> */}
-<LiaQuoteRightSolid style={{fontSize:'5rem', color:'#69cdf4'}}/>
+<LiaQuoteLeftSolid
+  style={{
+    fontSize: '5rem',
+    color: '#69cdf4',
+    transform: 'scaleX(-1)'
+  }}
+/>
+
+{/* <LuQuote style={{
+    fontSize: '5rem',
+    color: '#69cdf4',
+    transform: 'scaleY(-1)'
+  }} /> */}
+
+{/* <LiaQuoteRightSolid style={{fontSize:'5rem', color:'#69cdf4'}}/> */}
 
                  {/* <img src="/testimonialqoute.png" alt="" width={isSmall ?  '50%':'100%'} /> */}
 
