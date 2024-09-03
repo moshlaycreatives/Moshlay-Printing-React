@@ -1,14 +1,4 @@
-import {
-  Avatar,
-  Box,
-  Button,
-  Grid,
-  InputAdornment,
-  TextField,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import WholeSaleSectionMain from "./WholeSaleSection/WholeSaleSectionMain";
 import Page from "../../components/page/page";
@@ -27,76 +17,79 @@ import HomePageBrands from "./HomePageBrands/HomePageBrands";
 import WhyChooseMain from "./WhyChooseUs/WhyChooseMain";
 import SubHeader from "../Components/Header/SubHeader";
 
-
 const Landing = () => {
-  const [isScroll , setIsScroll] = useState(false);
-  const theme = useTheme()
+  const [isScroll, setIsScroll] = useState(false);
+  const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
-  const is1200   = useMediaQuery('(max-width:1200px)');
-  const isSeven70 = useMediaQuery ('(max-width:770px)')
+  const is1200 = useMediaQuery("(max-width:1200px)");
+  const isSeven70 = useMediaQuery("(max-width:770px)");
 
-  useEffect(()=>{
-  const handleScroll = ()=>{
-    if (window.scrollY > 100) {
-      setIsScroll(true)
-    } else {
-      setIsScroll(false)
-    }
-  };
-    window.addEventListener('scroll', handleScroll);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
 
-    return ()=>{
-      window.removeEventListener('scroll' , handleScroll);
-    }
-
-  },[])
-
-
-
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
+      <Page title="Moshlay Printing">
+        <Box
+          sx={{
+            position: "relative",
+          }}
+        >
+          <Box
+            sx={{
+              width: "100%",
+              position: isScroll ? "sticky" : "absolute",
+              top: 10,
+              left: 0,
+              display: "flex",
+              justifyContent: "end",
+              background: isScroll || isMedium ? "white" : "transparent",
+              zIndex: 10,
 
-<Page title='Moshlay Printing'>
+              top: isScroll
+                ? isSmall
+                  ? 48
+                  : isMedium
+                  ? 55
+                  : 50
+                : isSmall
+                ? 2
+                : isMedium
+                ? 7
+                : 50,
+              boxShadow: isScroll ? "0 4px 8px rgba(0, 0, 0, 0.3)" : "none",
+            }}
+          >
+            {isScroll || isMedium ? <Header2 /> : <Header />}
+          </Box>
 
-<Box sx={{
-  position:'relative'
-}}>
-
-<Box sx={{
-  width:'100%',
-  position:isScroll ? 'sticky' : 'absolute',
-  top:10, left:0,
-  display:'flex',
-  justifyContent:'end',
-   background:isScroll || isMedium ? 'white' : 'transparent',
-  zIndex:10,
-  
-  top:isScroll ? (isSmall ? 48 : isMedium ? 55 : 50) : (isSmall ? 2 : isMedium ? 7 : 50 ),
-boxShadow: isScroll ? '0 4px 8px rgba(0, 0, 0, 0.3)' : 'none',
-}}>
-{isScroll || isMedium ? <Header2/> : <Header/>}
-</Box>
-
-
-<HeroSectionMain/>
-<WholeSaleSectionMain/>
-<FeaturedProductsMain/>
-<CustomPackagingMain/>
-<CustomInspireMain/>
-<PremiumFinishMain/>
-<WhyChooseMain/>
-<TestimonialMain/>
-<Faqs/>
-
-<RequestInstant/>
-<HomePageBrands/>
-
-<HomePageSlider/>
-</Box>
-
-</Page>
+          <HeroSectionMain />
+          <WholeSaleSectionMain />
+          <FeaturedProductsMain />
+          <CustomPackagingMain />
+          <CustomInspireMain />
+          <PremiumFinishMain />
+          <WhyChooseMain />
+          <TestimonialMain />
+          <Faqs />
+          <RequestInstant />
+          <HomePageBrands />
+          <HomePageSlider />
+        </Box>
+      </Page>
     </>
   );
 };

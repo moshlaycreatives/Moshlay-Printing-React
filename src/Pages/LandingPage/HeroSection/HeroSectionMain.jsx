@@ -189,7 +189,7 @@ const HeroSectionMain = () => {
                       fontWeight: "400",
                       color: "white",
                       // fontStyle:'italic'
-                      // fontFamily:'Montserrat'
+                      // fontFa                                                                                                                                                                                                                                                               mily:'Montserrat'
                     }}
                   >
                     We provide you the best packaging solutions with customized
@@ -207,7 +207,7 @@ const HeroSectionMain = () => {
                       },
                       // backgroundColor:'red',
                       fontWeight: "700",
-                      letterSpacing:'1.3rem',
+                      letterSpacing:'0.3rem',
                       color: "transparent",
                       WebkitTextStroke: " 1px #57adec",
 

@@ -29,6 +29,7 @@ const boxStyles = {
   alignItems: "center",
   borderRadius: "4px",
   width: "100%",
+  // height:'100vh'
 };
 
 const fileInputStyles = {
@@ -90,7 +91,7 @@ const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
           // border: "2px solid grey",
           // borderRadius: "20px",
           // padding: "1.5rem",
-          // maxHeight: "103vh",
+          // height: "100vh",
           // overflow: "auto",
         }}>
         <Box
@@ -113,6 +114,7 @@ const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
             border: "2px solid grey",
             borderTop: "none",
             borderRadius: "0px 0px 20px 20px",
+            // height:'100vh'
           }}
         >
           <Box sx={{ display: "flex" }} gap={3}>

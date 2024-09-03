@@ -9,7 +9,7 @@ const RequestInstantText = () => {
           border: "2px solid grey",
           borderRadius: "20px",
           padding: "1.5rem",
-          maxHeight: "103vh",
+          height: "47.7rem",
           overflow: "auto",
         }}
       >
@@ -121,29 +121,33 @@ const RequestInstantText = () => {
 
         <br />
         <Typography sx={{ fontSize: "1.2rem", fontWeight: 600 }}>
-        Benefits from High-Grade Materials
+          Benefits from High-Grade Materials
         </Typography>
 
         <Typography sx={{ color: "grey" }}>
-        High-grade materials are often more resistant to wear, tear, and damage, leading to longer-lasting product packing.
-        </Typography>
-       <br />
-        <Typography sx={{ color: "grey" }}>
-        These materials can enhance the performance of products, such as improving insulation, strength, or conductivity.
+          High-grade materials are often more resistant to wear, tear, and
+          damage, leading to longer-lasting product packing.
         </Typography>
         <br />
         <Typography sx={{ color: "grey" }}>
-        High-grade materials often have a superior appearance, adding value and desirability to products.
-        </Typography> 
-        <br />
-        <Typography sx={{ color: "grey" }}>
-        In certain circumstances, high-grade materials can improve safety by being more resistant to hazards like fire, chemicals, or impact.
+          These materials can enhance the performance of products, such as
+          improving insulation, strength, or conductivity.
         </Typography>
         <br />
         <Typography sx={{ color: "grey" }}>
-        Products made with high-grade materials tend to retain their value over time, making them a better investment.
+          High-grade materials often have a superior appearance, adding value
+          and desirability to products.
         </Typography>
-        
+        <br />
+        <Typography sx={{ color: "grey" }}>
+          In certain circumstances, high-grade materials can improve safety by
+          being more resistant to hazards like fire, chemicals, or impact.
+        </Typography>
+        <br />
+        <Typography sx={{ color: "grey" }}>
+          Products made with high-grade materials tend to retain their value
+          over time, making them a better investment.
+        </Typography>
       </Box>
     </>
   );
