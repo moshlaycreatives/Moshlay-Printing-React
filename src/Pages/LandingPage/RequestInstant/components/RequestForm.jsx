@@ -78,7 +78,13 @@ const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
     <>
-      <Box sx={{}}>
+      <Box sx={{
+          // border: "2px solid grey",
+          // borderRadius: "20px",
+          // padding: "1.5rem",
+          // maxHeight: "103vh",
+          // overflow: "auto",
+        }}>
         <Box
           sx={{
             padding: "0.5rem 0rem",

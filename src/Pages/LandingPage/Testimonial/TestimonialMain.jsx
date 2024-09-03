@@ -64,7 +64,7 @@ const TestimonialMain = () => {
       <Box
         sx={{
           padding:isMedium ? "0%" : '0% 5%', 
-          marginTop:isMedium ? "0rem":"-12rem",
+          marginTop:isMedium ? "0rem": is1200 ? '-12rem': is1500 ? "-11rem":  "-9rem",
         }}
       >
         <Grid container>
@@ -191,7 +191,8 @@ const TestimonialMain = () => {
                 // justifySelf:'end'
                 textAlign:'end'
               }}>
-                <img src="/testimonialqoute.png" alt="" width={isSmall ?  '50%':'100%'} />
+                 <img src="/testimonialqoute.png" alt="" width={isSmall ?  '50%':'100%'} />
+                 
               </Box>
               </Box>
             </Box>

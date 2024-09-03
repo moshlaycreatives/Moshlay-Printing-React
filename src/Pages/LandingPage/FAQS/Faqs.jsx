@@ -34,7 +34,7 @@ const Faqs = () => {
     answer: " Our standard delivery time for custom boxes varies depending on the order quantity and complexity."
   },
   {
-    question: "What If I don't have artwork but just an idea of design for personalized packaging for my business?",
+    question: "What if I have a design idea but no artwork for packaging?",
     answer: "Our design team can help you bring your packaging idea to life, even if you don't have artwork ready."
   },
   
@@ -53,7 +53,7 @@ const faqsData2 =[{
     answer: "We have a minimum order quantity of 500 for custom boxes to ensure efficiency and cost-effectiveness."
   },
   {
-    question: "What are the possible sizes and shapes of custom-made packaging you make?",
+    question: "What sizes and shapes of custom packaging can you provide?",
     answer: "We can create custom boxes in various sizes and shapes to fit your specific product requirements."
   },
   
@@ -90,8 +90,8 @@ const faqsData2 =[{
             marginBottom: '1rem', 
             border:'none',
             borderRadius:'5px',
-            padding:'.5rem'
-            
+            padding:'.5rem', 
+            // height:'4rem'
           }}
         >
           <AccordionSummary
@@ -139,8 +139,8 @@ const faqsData2 =[{
             marginBottom: '1rem', 
             border:'none',
             borderRadius:'5px',
-            padding:'.5rem'
-            
+            padding:'.5rem',
+            // height:'4rem'
           }}
         >
           <AccordionSummary
