@@ -10,6 +10,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { IoIosCheckmarkCircleOutline, IoIosMedal } from "react-icons/io";
+import { LiaQuoteRightSolid } from "react-icons/lia";
 
 const TestimonialMain = () => {
   const theme = useTheme();
@@ -21,7 +22,7 @@ const TestimonialMain = () => {
     <>
     <Box sx={{
         backgroundImage:'url(testimonialhead.png)',
-        backgroundPosition:'center', 
+        backgroundPosition:'center',
         backgroundSize:'cover',
         objectFit:'cover', padding:'5%'
     }}>
@@ -31,7 +32,7 @@ const TestimonialMain = () => {
                   color: "transparent",
                   fontWeight: "600",
                   WebkitTextStroke:'2px #57adec',
-                }} 
+                }}
               >
                 Testimonial
               </Typography>
@@ -63,7 +64,7 @@ const TestimonialMain = () => {
 
       <Box
         sx={{
-          padding:isMedium ? "0%" : '0% 5%', 
+          padding:isMedium ? "0%" : '0% 5%',
           marginTop:isMedium ? "0rem": is1200 ? '-12rem': is1500 ? "-11rem":  "-9rem",
         }}
       >
@@ -85,7 +86,7 @@ const TestimonialMain = () => {
                 <img
                   src="/trustpilot.png"
                   alt=""
-                  width={ "30%"}
+                  width={ "25%"}
                 />
               {/* </Box> */}
               <Typography>336 Reviews</Typography>
@@ -172,7 +173,7 @@ const TestimonialMain = () => {
                 sure all is good before shipping out the packaging.
               </Typography>
               <Box sx={{
-                display:'flex', 
+                display:'flex',
                 alignItems:'end',
                 justifyContent:'space-between',
                  width:'100%'
@@ -181,18 +182,21 @@ const TestimonialMain = () => {
                 sx={{
                   fontSize:isSmall ? "1.1rem" : "1.2rem",
                   color: "white",
-                  fontWeight: "500", 
+                  fontWeight: "500",
                 }}
               >
                 Trevor Sain <span style={{marginLeft:'2rem', fontSize:'1rem', fontWeight:400}}> 5 Years</span>
               </Typography>
-             
+
               <Box sx={{
                 // justifySelf:'end'
                 textAlign:'end'
               }}>
-                 <img src="/testimonialqoute.png" alt="" width={isSmall ?  '50%':'100%'} />
-                 
+{/* <Typography sx={{fontSize:'3rem'}}>”</Typography> */}
+<LiaQuoteRightSolid style={{fontSize:'5rem', color:'#69cdf4'}}/>
+
+                 {/* <img src="/testimonialqoute.png" alt="" width={isSmall ?  '50%':'100%'} /> */}
+
               </Box>
               </Box>
             </Box>
