@@ -60,6 +60,8 @@ const RequestForm = () => {
 const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
   const [fileName, setFileName] = useState("");
   const [captchaAnswer, setCaptchaAnswer] = useState("");
+  const [inputValue, setInputValue] = useState("");
+
   const correctAnswer = 10; // For the math captcha 2 + 8 = 10
 
   const handleFileChange = (e) => {
@@ -75,6 +77,12 @@ const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
     // Add your submit logic here
     alert("Form submitted successfully!");
   };
+
+  const handleChange = (e)=> {
+   const h= e.target.value
+   console.log(h, 'handle value')
+   setInputValue(h)
+  }
 
   return (
     <>
@@ -261,8 +269,8 @@ const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
               />{" "}
               =
               <TextField
-                value="4"
-                InputProps={{ readOnly: true }}
+                value={inputValue}
+                onChange={handleChange}
                 size="small"
                 sx={{ width: "60px" }}
               />

@@ -11,7 +11,7 @@ const HeroSectionMain = () => {
 
   return (
     <>
-      <Box marginTop={'3rem'}>              
+      <Box marginTop={'3rem'}>
         <Grid container>
           <Grid item lg={2.5} md={2.5} sm={4} xs={4} sx={{
             display: isMedium ? 'none' : 'block',
@@ -205,7 +205,9 @@ const HeroSectionMain = () => {
                         md: "4.1rem",
                         lg: "6rem",
                       },
+                      // backgroundColor:'red',
                       fontWeight: "700",
+                      letterSpacing:'1.3rem',
                       color: "transparent",
                       WebkitTextStroke: " 1px #57adec",
 
