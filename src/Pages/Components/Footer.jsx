@@ -223,7 +223,7 @@ const Footer = () => {
                   color: "white",
                 }}
               >
-                INDUSTRIES 
+                INDUSTRIES
                 <Divider sx={{ color: "white" , backgroundColor:'#57adec', width:'5rem ', height:'1px'}}  />
               </Typography>
               <Typography
@@ -398,7 +398,7 @@ const Footer = () => {
                 </MuiLink>
               </Typography>
 
-              <Typography
+              {/* <Typography
                 sx={{
                   marginTop: "0.5rem",
                   color: "grey",
@@ -420,7 +420,7 @@ const Footer = () => {
                 >
                   <MdLocalPhone style={{ fontSize: "1.2rem" }} /> 0800-208-8043
                 </MuiLink>
-              </Typography>
+              </Typography> */}
 
               <Typography
                 sx={{
@@ -443,7 +443,7 @@ const Footer = () => {
                   }}
                 >
                   <MdOutlineMail style={{ fontSize: "1.2rem" }} />{" "}
-                  sales@poppackaging.co.uk
+                  info@moshlayprinting.com
                 </MuiLink>
               </Typography>
             </Grid>
