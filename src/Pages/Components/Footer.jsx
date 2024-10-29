@@ -373,7 +373,7 @@ const Footer = () => {
                 CONTACT US
                  <Divider sx={{ color: "white" , backgroundColor:'#57adec', width:'5rem ', height:'1px'}}  />
               </Typography>
-              <Typography
+              {/* <Typography
                 sx={{
                   color: "grey",
                   fontSize: "1rem",
@@ -396,7 +396,7 @@ const Footer = () => {
                   <IoLocationSharp style={{ fontSize: "1.5rem" }} />
                   1601 Ware Bottom Spring Rd, Suite 210, Chester - VA 23836
                 </MuiLink>
-              </Typography>
+              </Typography> */}
 
               {/* <Typography
                 sx={{
