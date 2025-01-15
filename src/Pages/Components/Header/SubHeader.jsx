@@ -38,7 +38,7 @@ const SubHeader = () => {
         color:'white',
          fontWeight:400,
           marginLeft:'0.5rem'
-       }}>Office Timings Mon - Fri 08:00 pm 5:00 am</Typography>
+       }}>Office Timings Mon - Fri 09:00am 5:00pm</Typography>
        </Box>
 
        <Box sx={{

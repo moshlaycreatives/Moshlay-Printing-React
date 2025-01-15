@@ -64,11 +64,11 @@ const Footer = () => {
               <Typography
                 sx={{ fontSize: "1.1rem", marginTop: "1rem", color: "white" }}
               >
-                We collaborate with people <br/> and brands.
+                We collaborate with people <br /> and brands.
                 <br />
-                Lets build something great <br/> together.
+                Lets build something great <br /> together.
                 <br />
-                Signup for exclusive offers <br/>and updates!
+                Signup for exclusive offers <br />and updates!
               </Typography>
             </Grid>
             <Grid item lg={2.5} md={2.5} sm={12} xs={12}>
@@ -81,7 +81,7 @@ const Footer = () => {
                 }}
               >
                 Information
-                <Divider sx={{ color: "white" , backgroundColor:'#57adec', width:'5rem ', height:'1px'}} />
+                <Divider sx={{ color: "white", backgroundColor: '#57adec', width: '5rem ', height: '1px' }} />
               </Typography>
               <Typography
                 sx={{
@@ -224,7 +224,7 @@ const Footer = () => {
                 }}
               >
                 INDUSTRIES
-                <Divider sx={{ color: "white" , backgroundColor:'#57adec', width:'5rem ', height:'1px'}}  />
+                <Divider sx={{ color: "white", backgroundColor: '#57adec', width: '5rem ', height: '1px' }} />
               </Typography>
               <Typography
                 sx={{
@@ -371,33 +371,8 @@ const Footer = () => {
                 }}
               >
                 CONTACT US
-                 <Divider sx={{ color: "white" , backgroundColor:'#57adec', width:'5rem ', height:'1px'}}  />
+                <Divider sx={{ color: "white", backgroundColor: '#57adec', width: '5rem ', height: '1px' }} />
               </Typography>
-              {/* <Typography
-                sx={{
-                  color: "grey",
-                  fontSize: "1rem",
-
-                  textTransform: "none",
-                }}
-              >
-                <MuiLink
-                  component={Link}
-                  to="/"
-                  sx={{
-                    textDecoration: "none",
-                    color: "white",
-                    alignItems: "start",
-                    display: "flex",
-
-                    "&:hover": { textDecoration: "none" },
-                  }}
-                >
-                  <IoLocationSharp style={{ fontSize: "1.5rem" }} />
-                  1601 Ware Bottom Spring Rd, Suite 210, Chester - VA 23836
-                </MuiLink>
-              </Typography> */}
-
               {/* <Typography
                 sx={{
                   marginTop: "0.5rem",
@@ -442,10 +417,38 @@ const Footer = () => {
                     "&:hover": { textDecoration: "none" },
                   }}
                 >
-                  <MdOutlineMail style={{ fontSize: "1.2rem" }} />{" "}
+                  <MdOutlineMail style={{ fontSize: "1.2rem", margin: "0px 4px 0px 0px" }} />
                   info@moshlayprinting.com
                 </MuiLink>
               </Typography>
+
+
+              <Typography
+                sx={{
+                  color: "grey",
+                  fontSize: "1rem",
+
+                  textTransform: "none",
+                }}
+              >
+                <MuiLink
+                  component={Link}
+                  to="/"
+                  sx={{
+                    textDecoration: "none",
+                    color: "white",
+                    alignItems: "start",
+                    display: "flex",
+
+                    "&:hover": { textDecoration: "none" },
+                  }}
+                >
+                  <IoLocationSharp style={{ fontSize: "1.5rem", margin: "0px 4px 0px 0px" }} />
+                  Chester Virginia USA
+                </MuiLink>
+              </Typography>
+
+
             </Grid>
           </Grid>
 
